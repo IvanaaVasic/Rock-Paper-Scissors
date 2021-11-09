@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="img/favicon-32x32.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Rock | Paper | Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-score-wrapper">
+        <img src="img/logo.svg" alt="logo" class="logo" />
+        <div class="score-wrapper">
+          <p class="score">SCORE</p>
+          <div class="score-value">0</div>
+        </div>
+      </div>
+
+      <div class="picking-sign-container">
+        <div class="first-row-wrapper">
+          <div class="circle-1 paper-circle-1 paper">
+            <div class="circle-2 paper-circle-2">
+              <div class="circle-3 paper-circle-3">
+                <div class="circle-4 paper-circle-4">
+                  <img src="img/icon-paper.svg" alt="paper" class="paper-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="circle-1 scissors-circle-1 scissors">
+            <div class="circle-2 scissors-circle-2">
+              <div class="circle-3 scissors-circle-3">
+                <div class="circle-4 scissors-circle-4">
+                  <img src="img/icon-scissors.svg" alt="scissors" class="scissors-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-row-wrapper">
+          <div class="circle-1 rock-circle-1 rock">
+            <div class="circle-2 rock-circle-2">
+              <div class="circle-3 rock-circle-3">
+                <div class="circle-4 rock-circle-4">
+                  <img src="img/icon-rock.svg" alt="rock" class="rock-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="battle-container">
+        <div class="picked-container">
+          <div class="my-picked-wrapper">
+            <p class="you-picked picked">YOU PICKED</p>
+            <div class="circle-1 paper-circle-1 circle-1-battle my-paper-picked">
+              <div class="circle-2 paper-circle-2 circle-2-battle">
+                <div class="circle-3 paper-circle-3 circle-3-battle">
+                  <div class="circle-4 paper-circle-4 circle-4-battle">
+                    <img src="img/icon-paper.svg" alt="paper" class="paper" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="circle-1 scissors-circle-1 circle-1-battle my-scissors-picked">
+              <div class="circle-2 scissors-circle-2 circle-2-battle">
+                <div class="circle-3 scissors-circle-3 circle-3-battle">
+                  <div class="circle-4 scissors-circle-4 circle-4-battle">
+                    <img src="img/icon-scissors.svg" alt="scissors" class="scissors" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="circle-1 rock-circle-1 circle-1-battle my-rock-picked">
+              <div class="circle-2 rock-circle-2 circle-2-battle">
+                <div class="circle-3 rock-circle-3 circle-3-battle">
+                  <div class="circle-4 rock-circle-4 circle-4-battle">
+                    <img src="img/icon-rock.svg" alt="rock" class="rock" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-container win-result">
+            <h3 class="heading-result">YOU WIN</h3>
+            <button class="play-again-btn">PLAY AGAIN</button>
+          </div>
+          <div class="result-container lose-result">
+            <h3 class="heading-result">YOU LOSE</h3>
+            <button class="play-again-btn">PLAY AGAIN</button>
+          </div>
+          <div class="result-container draw-result">
+            <h3 class="heading-result">DRAW</h3>
+            <button class="play-again-btn">PLAY AGAIN</button>
+          </div>
+
+          <div class="house-picked-wrapper">
+            <p class="house-picked picked">THE HOUSE PICKED</p>
+            <div class="waiting-circle"></div>
+            <div class="circle-1 paper-circle-1 circle-1-battle house-paper-picked">
+              <div class="circle-2 paper-circle-2 circle-2-battle">
+                <div class="circle-3 paper-circle-3 circle-3-battle">
+                  <div class="circle-4 paper-circle-4 circle-4-battle">
+                    <img src="img/icon-paper.svg" alt="paper" class="paper" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="circle-1 scissors-circle-1 circle-1-battle house-scissors-picked">
+              <div class="circle-2 scissors-circle-2 circle-2-battle">
+                <div class="circle-3 scissors-circle-3 circle-3-battle">
+                  <div class="circle-4 scissors-circle-4 circle-4-battle">
+                    <img src="img/icon-scissors.svg" alt="scissors" class="scissors" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="circle-1 rock-circle-1 circle-1-battle house-rock-picked">
+              <div class="circle-2 rock-circle-2 circle-2-battle">
+                <div class="circle-3 rock-circle-3 circle-3-battle">
+                  <div class="circle-4 rock-circle-4 circle-4-battle">
+                    <img src="img/icon-rock.svg" alt="rock" class="rock" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-button-wrapper">
+        <button class="rules-btn">RULES</button>
+      </div>
+
+      <div id="myModal" class="modal-rules">
+        <div class="modal-content-rules">
+          <div class="heading-icon-rules-wrapper">
+            <p class="heading-rules">RULES</p>
+            <span> <img src="img/icon-close.svg" alt="icon-close" class="close desktop-close" /></span>
+          </div>
+          <div class="rules-description-wrapper">
+            <img src="img/image-rules.svg" alt="rules-img" class="rules-img" />
+          </div>
+          <span> <img src="img/icon-close.svg" alt="icon-close" class="close mobile-close" /></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
