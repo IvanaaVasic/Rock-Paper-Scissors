@@ -281,6 +281,9 @@ button {
 .mobile-close {
   display: none;
 }
+.close {
+  cursor: pointer;
+}
 .battle-container.battle-responsive-desktop {
   width: 65vw;
 }
@@ -449,6 +452,7 @@ button {
   }
   .mobile-close {
     display: flex;
+    cursor: pointer;
   }
   .container {
     padding-top: 21px;
